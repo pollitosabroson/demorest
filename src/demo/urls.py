@@ -4,12 +4,13 @@ admin.autodiscover()
 
 from books.views import LibroViewSet, AutorViewSet
 from rest_framework.routers import DefaultRouter
+
 router = DefaultRouter()
 router.register(r'libros', LibroViewSet)
 router.register(r'autores', AutorViewSet)
 
 urlpatterns = patterns(
     '',
-    url(r'^', include(router.urls)),
+    url(r'^api/', include(router.urls)),
     url(r'^admin/', include(admin.site.urls)),
 )

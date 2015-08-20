@@ -7,5 +7,15 @@
         "command_prefixes": [
             "../env/bin/activate"
         ]
+    },
+    "staging": {
+        "user": "prueba",
+        "hosts": ["tu-host"],
+        "site_dir": "/la/ubicación/de/tu/proyecto/",
+        "django_settings": "djangomx.settings.staging",
+        "command_prefixes": [
+            "/la/ubicación/de/tu/entornos/virtuales",
+            "/la/ubicación/de/tus/variables/entorno"
+        ]
     }
 }
